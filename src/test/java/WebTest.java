@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class WebTest {
-
     @Test
     public void testFirst() throws InterruptedException {
         String chromeDriver = "webdriver.chrome.driver";
@@ -19,10 +18,7 @@ public class WebTest {
         Thread.sleep(3000);
 
         String actualResult = driver.getCurrentUrl();
-
         Assert.assertEquals(actualResult, expectedResult);
-
-
 
         driver.close();
         driver.quit();
